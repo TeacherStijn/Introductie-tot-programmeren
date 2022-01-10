@@ -1,0 +1,24 @@
+class Auto {
+	private String merk;
+	private String type;
+	private String kleur;
+	
+	Auto (m, t, k) {
+	 this.merk = m;
+	 this.type = t;
+	 this.kleur = k;
+	}
+	
+	public void starten() {
+		System.out.println("Deze " + this.merk + " gaat rijden!");
+	}
+}
+
+
+// Elders in code, om de auto te gebruiken, typen wij:
+
+Auto mijnAuto = new Auto('Toyota', 'Avensis', 'Zilvergoud');
+
+// En om hem vervolgens te starten in code:
+
+mijnAuto.starten();
